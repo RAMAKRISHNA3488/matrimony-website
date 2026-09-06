@@ -1,0 +1,378 @@
+/* ==========================================================================
+   TELUGUBANDHAM — REFINED MASTER FOOTER
+   Warm Ivory, Deep Burgundy, Champagne Gold Palette
+   ========================================================================== */
+
+.site-footer {
+  background-color: #FAF7F2;
+  color: #5E5862;
+  padding: 52px 0 32px;
+  border-top: 1px solid rgba(201, 162, 74, 0.28);
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* 5-Column Grid Layout */
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 0.88fr 0.88fr 0.88fr 0.88fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* 1. Brand Column */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-brand-wrap {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 0.65rem;
+}
+
+.footer-brand-logo-img {
+  height: 52px;
+  width: auto;
+  max-width: 260px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-tagline {
+  font-family: var(--font-serif, Georgia, serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #7A1635;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.65rem;
+}
+
+.footer-desc {
+  font-size: 0.885rem;
+  color: #5E5862;
+  line-height: 1.62;
+  max-width: 340px;
+  margin: 0 0 1.35rem;
+}
+
+/* Social Media Follow */
+.footer-social-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-social-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #7A1635;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E2DCD3;
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.footer-social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-social-link.social-instagram:hover {
+  border-color: #E1306C;
+}
+
+.footer-social-link.social-facebook:hover {
+  border-color: #1877F2;
+}
+
+.footer-social-link.social-youtube:hover {
+  border-color: #FF0000;
+}
+
+.footer-social-link:focus-visible {
+  outline: 2px solid #7A1635;
+  outline-offset: 2px;
+}
+
+/* Navigation Columns */
+.footer-nav-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading-desktop {
+  font-size: 0.825rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #29242A;
+  margin-bottom: 1.15rem;
+  display: block;
+}
+
+.footer-mobile-only {
+  display: none !important;
+}
+
+.footer-accordion-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 1.15rem;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  cursor: default;
+  font-family: inherit;
+}
+
+.footer-heading {
+  font-size: 0.825rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #29242A;
+}
+
+.footer-chevron {
+  display: none;
+  color: #7A1635;
+  transition: transform 0.25s ease;
+}
+
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  color: #5E5862;
+  font-size: 0.885rem;
+  line-height: 1.45;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  border-radius: 4px;
+}
+
+.footer-link:hover {
+  color: #7A1635;
+  transform: translateX(3px);
+}
+
+.footer-link.active {
+  color: #7A1635;
+  font-weight: 700;
+}
+
+.footer-link:focus-visible {
+  outline: 2px solid #7A1635;
+  outline-offset: 2px;
+}
+
+/* Legal Divider & Bottom Bar */
+.footer-bottom-bar {
+  margin-top: 38px;
+  padding-top: 1.35rem;
+  border-top: 1px solid rgba(201, 162, 74, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-matrimonial-notice {
+  font-size: 0.8rem;
+  color: #736B77;
+  line-height: 1.55;
+  margin: 0;
+  text-align: left;
+}
+
+.footer-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #736B77;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.footer-copyright {
+  color: #736B77;
+}
+
+.footer-admin-link {
+  color: #736B77;
+  font-size: 0.78rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-admin-link:hover {
+  color: #7A1635;
+  text-decoration: underline;
+}
+
+.footer-admin-link:focus-visible {
+  outline: 2px solid #7A1635;
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Large Tablet / Small Desktop (992px - 1180px) */
+@media (max-width: 1180px) {
+  .footer-main-grid {
+    gap: 1.75rem;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .site-footer {
+    padding: 44px 0 26px;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-brand-col {
+    grid-column: span 2;
+  }
+
+  .footer-desc {
+    max-width: 520px;
+  }
+
+  .footer-bottom-bar {
+    margin-top: 30px;
+  }
+}
+
+/* Mobile (<= 767px) */
+@media (max-width: 767px) {
+  .site-footer {
+    padding: 36px 0 22px;
+  }
+
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .footer-brand-col {
+    grid-column: span 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  /* Accordion Mode on Mobile */
+  .footer-heading-desktop {
+    display: none;
+  }
+
+  .footer-mobile-only {
+    display: flex !important;
+  }
+
+  .footer-accordion-btn {
+    display: flex;
+    cursor: pointer;
+    padding: 0.65rem 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(201, 162, 74, 0.2);
+    min-height: 44px;
+  }
+
+  .footer-chevron {
+    display: block;
+  }
+
+  .footer-chevron.open {
+    transform: rotate(180deg);
+  }
+
+  .footer-links-list {
+    display: none;
+    padding: 0.75rem 0 0.5rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .footer-links-list.open {
+    display: flex;
+  }
+
+  .footer-link {
+    min-height: 38px;
+    font-size: 0.925rem;
+  }
+
+  .footer-bottom-bar {
+    margin-top: 24px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-matrimonial-notice {
+    font-size: 0.76rem;
+  }
+
+  .footer-copyright,
+  .footer-admin-link {
+    font-size: 0.76rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-chevron,
+  .footer-link,
+  .footer-social-link {
+    transition: none !important;
+  }
+}

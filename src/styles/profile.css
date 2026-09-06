@@ -1,0 +1,815 @@
+/* Profile Details & Bio-Data View Styles */
+.profile-view-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+/* Profile Hero Card */
+.profile-hero-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.profile-gallery-container {
+  width: 100%;
+}
+
+.profile-main-photo-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-light);
+}
+
+.profile-main-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-no-photo-wrap {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--bg-warm, #FAF7F2) 0%, #FFF5F7 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.profile-no-photo-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-900, #5C0E1E) 0%, var(--primary-800, #7A1428) 100%);
+  color: #FFFFFF;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(92, 14, 30, 0.2);
+}
+
+.profile-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.profile-hero-name {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.profile-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.profile-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-light);
+}
+
+.profile-hero-actions .btn {
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.profile-hero-actions .btn:hover {
+  transform: translateY(-2.5px);
+}
+
+.profile-hero-actions .btn:active {
+  transform: translateY(0.5px) scale(0.97);
+}
+
+/* 1. Report Button Tactile Hover Interaction */
+.action-btn-report {
+  background-color: rgba(220, 38, 38, 0.04) !important;
+  border: 1px solid rgba(220, 38, 38, 0.2) !important;
+  color: #7E7478 !important;
+  border-radius: var(--radius-full, 9999px) !important;
+  font-weight: 600 !important;
+  padding: 0.5rem 1.15rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  cursor: pointer !important;
+}
+
+.action-btn-report:hover {
+  background-color: rgba(220, 38, 38, 0.12) !important;
+  color: #DC2626 !important;
+  border-color: #EF4444 !important;
+  transform: translateY(-3px) scale(1.04) !important;
+  box-shadow: 0 6px 20px rgba(220, 38, 38, 0.22) !important;
+}
+
+.action-btn-report svg {
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
+}
+
+.action-btn-report:hover svg {
+  transform: scale(1.22) rotate(-8deg);
+  color: #DC2626;
+}
+
+/* 2. Download Bio-Data Button Tactile Hover */
+.action-btn-download {
+  border-radius: var(--radius-full, 9999px) !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  padding: 0.5rem 1.15rem !important;
+}
+
+.action-btn-download:hover {
+  border-color: var(--gold-500, #D4AF37) !important;
+  background-color: rgba(212, 175, 55, 0.1) !important;
+  color: #7A5500 !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25) !important;
+}
+
+.action-btn-download svg {
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.action-btn-download:hover svg {
+  transform: translateY(2px) scale(1.18);
+  color: #B88E18;
+}
+
+/* 2.5 Chat Button Tactile Hover Interaction */
+.action-btn-chat {
+  border-radius: var(--radius-full, 9999px) !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  padding: 0.5rem 1.15rem !important;
+}
+
+.action-btn-chat:hover {
+  border-color: var(--primary-700, #901B2C) !important;
+  background-color: rgba(144, 27, 44, 0.08) !important;
+  color: var(--primary-800, #7A1428) !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 6px 20px rgba(144, 27, 44, 0.2) !important;
+}
+
+.action-btn-chat svg {
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease;
+  color: var(--primary-700, #901B2C);
+}
+
+.action-btn-chat:hover svg {
+  transform: scale(1.22) rotate(-6deg);
+  color: var(--primary-800, #7A1428);
+}
+
+/* 3. Shortlist Button Tactile Hover */
+.action-btn-shortlist {
+  border-radius: var(--radius-full, 9999px) !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.45rem !important;
+  padding: 0.5rem 1.15rem !important;
+}
+
+.action-btn-shortlist:hover {
+  border-color: var(--gold-500, #D4AF37) !important;
+  background-color: rgba(212, 175, 55, 0.1) !important;
+  color: #7A5500 !important;
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25) !important;
+}
+
+.action-btn-shortlist svg {
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.action-btn-shortlist:hover svg {
+  transform: scale(1.22);
+}
+
+/* 4. Express Interest / Primary Button Tactile Hover */
+.profile-hero-actions .btn-primary {
+  border-radius: var(--radius-full, 9999px) !important;
+  font-weight: 700 !important;
+  padding: 0.5rem 1.35rem !important;
+  box-shadow: 0 4px 14px rgba(122, 20, 40, 0.25);
+}
+
+.profile-hero-actions .btn-primary:hover {
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 8px 24px rgba(122, 20, 40, 0.38) !important;
+}
+
+.profile-hero-actions .btn-primary svg {
+  transition: transform 0.22s ease;
+}
+
+.profile-hero-actions .btn-primary:hover svg {
+  transform: translateX(3px) scale(1.15);
+}
+
+/* Bio-Data Content Sections Grid */
+.biodata-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.biodata-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-xs);
+}
+
+.biodata-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.biodata-details-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.biodata-field-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.biodata-field-label {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.biodata-field-value {
+  font-size: 0.925rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Horoscope Astrological Grid */
+.horoscope-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: var(--bg-warm);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+}
+
+/* Partner Expectations Checklist */
+.preferences-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.preference-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-warm);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 1024px) {
+  .profile-hero-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .biodata-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-hero-card {
+    padding: 1.25rem 1rem;
+    border-radius: var(--radius-lg);
+    gap: 1.25rem;
+  }
+
+  .profile-hero-name {
+    font-size: 1.45rem;
+  }
+
+  .profile-hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile-hero-actions .btn {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+  }
+
+  .biodata-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .biodata-details-table {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .horoscope-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .preference-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}
+
+/* Profile Edit Responsive Layout */
+.profile-edit-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.profile-edit-layout > * {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-edit-tabs-card {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.profile-edit-tabs-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .profile-edit-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .profile-edit-tabs-wrap {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    gap: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .profile-edit-tabs-wrap::-webkit-scrollbar {
+    display: none;
+  }
+
+  .profile-edit-tab-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+.profile-edit-form-card {
+  padding: 2rem;
+}
+
+.profile-edit-save-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 640px) {
+  .profile-edit-form-card {
+    padding: 1.25rem 1rem;
+  }
+
+  .profile-edit-save-row {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .profile-edit-save-btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+
+  .photo-grid-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .profile-edit-form-card {
+    padding: 1rem 0.75rem;
+  }
+
+  .photo-grid-container {
+    gap: 0.5rem !important;
+  }
+}
+
+/* ==========================================================================
+   PHOTO MANAGER STYLES (PROFILE EDIT)
+   ========================================================================== */
+.photo-manager-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.photo-manager-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-light, #EDE8E9);
+  padding-bottom: 0.85rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.photo-manager-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary-900, #5C0E1E);
+}
+
+.photo-count-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-700, #901B2C);
+  background-color: var(--primary-50, #FFF5F7);
+  border: 1px solid var(--primary-200, #F5C6CB);
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+}
+
+.photo-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.photo-item-card {
+  position: relative;
+  border-radius: var(--radius-lg, 12px);
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg-warm, #FAF7F2);
+  border: 2px solid var(--border-light, #EDE8E9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.22s ease;
+}
+
+.photo-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-300, #E0A0B0);
+}
+
+.photo-item-card.is-main {
+  border-color: var(--gold-500, #C99A3A);
+  box-shadow: 0 4px 14px rgba(201, 154, 58, 0.2);
+}
+
+.photo-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-main-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(135deg, var(--primary-900, #5C0E1E) 0%, var(--primary-800, #7A1428) 100%);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+}
+
+.photo-actions-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 10, 15, 0.68);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  padding: 0.6rem;
+  z-index: 3;
+}
+
+.photo-item-card:hover .photo-actions-overlay,
+.photo-item-card:focus-within .photo-actions-overlay {
+  opacity: 1;
+}
+
+.photo-action-btn {
+  background: #FFFFFF;
+  color: var(--text-primary, #29252A);
+  border: none;
+  border-radius: 6px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.photo-action-btn:hover {
+  background: #FAF7F2;
+  color: var(--primary-700, #901B2C);
+  transform: scale(1.02);
+}
+
+.photo-action-btn.btn-delete {
+  color: #DC2626;
+}
+
+.photo-action-btn.btn-delete:hover {
+  background: #FEE2E2;
+  color: #B91C1C;
+}
+
+.photo-action-btn.btn-main {
+  color: #936C18;
+}
+
+.photo-action-btn.btn-main:hover {
+  background: #FEF3C7;
+  color: #78350F;
+}
+
+.photo-add-slot-card {
+  border: 2px dashed var(--border-strong, #D6CCC7);
+  border-radius: var(--radius-lg, 12px);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--bg-warm, #FAF7F2);
+  color: var(--primary-700, #901B2C);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 1rem;
+  text-align: center;
+}
+
+.photo-add-slot-card:hover {
+  border-color: var(--primary-700, #901B2C);
+  background-color: #FFF5F7;
+  transform: translateY(-2px);
+}
+
+.photo-dropzone-box {
+  border: 2px dashed #C9A24A;
+  border-radius: var(--radius-lg, 14px);
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+  background-color: #FAF8F5;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.photo-dropzone-box:hover,
+.photo-dropzone-box.dragging {
+  border-color: var(--primary-700, #901B2C);
+  background-color: #FFF8F6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(144, 27, 44, 0.08);
+}
+
+.photo-dropzone-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #FFF0F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-700, #901B2C);
+  transition: transform 0.2s ease;
+}
+
+.photo-dropzone-box:hover .photo-dropzone-icon-wrap {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.photo-tips-box {
+  background: #F4F8F6;
+  border: 1px solid #D1E7DD;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.photo-tip-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  color: #1E4638;
+}
+
+/* ==========================================================================
+   BIODATA PRINT & PREVIEW RESPONSIVE RULES (320px - 1920px+)
+   ========================================================================== */
+.biodata-preview-sheet {
+  padding: 1.5rem 1.75rem;
+  background-color: #FFFFFF;
+  margin: 1.25rem;
+  border-radius: 6px;
+  border: 2px solid #D4AF37;
+  outline: 1px solid #D4AF37;
+  outline-offset: -5px;
+  box-sizing: border-box;
+}
+
+.biodata-preview-summary-card {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  padding-bottom: 0.95rem;
+  border-bottom: 1px dashed #D0C6BD;
+  margin-bottom: 0.95rem;
+}
+
+.biodata-preview-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.biodata-preview-info-table {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  row-gap: 4px;
+  column-gap: 6px;
+}
+
+.biodata-preview-info-table > span {
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+  .biodata-preview-sheet {
+    margin: 0.65rem !important;
+    padding: 1.1rem 0.85rem !important;
+  }
+
+  .biodata-preview-details-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .biodata-preview-info-table {
+    grid-template-columns: 120px 1fr !important;
+    row-gap: 5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .biodata-preview-sheet {
+    margin: 0.4rem !important;
+    padding: 0.85rem 0.65rem !important;
+    outline-offset: -3px !important;
+  }
+
+  .biodata-preview-summary-card {
+    gap: 0.75rem !important;
+  }
+
+  .biodata-preview-summary-card img {
+    width: 80px !important;
+    height: 100px !important;
+  }
+
+  .biodata-preview-info-table {
+    grid-template-columns: 105px 1fr !important;
+    font-size: 0.775rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .biodata-preview-sheet {
+    margin: 0.25rem !important;
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  .biodata-preview-info-table {
+    grid-template-columns: 96px 1fr !important;
+    font-size: 0.74rem !important;
+    column-gap: 4px !important;
+  }
+}
+
