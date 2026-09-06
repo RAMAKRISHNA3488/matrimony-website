@@ -1,0 +1,118 @@
+:root {
+  /* Brand Primary - Refined Deep Burgundy */
+  --primary-950: #300614;
+  --primary-900: #4B0D21;
+  --primary-800: #62112B;
+  --primary-700: #7A1635; /* Primary Brand Color */
+  --primary-600: #962245;
+  --primary-500: #B52F57;
+  --primary-400: #D34C73;
+  --primary-300: #E67897;
+  --primary-200: #F3ABC0;
+  --primary-100: #FAD4DF;
+  --primary-50: #FAF0F3;  /* Soft Blush Tint */
+
+  /* Secondary Accent - Subtle Warm Gold */
+  --gold-800: #7E5F1E;
+  --gold-700: #A37C28;
+  --gold-600: #C69A3A; /* Gold Accent */
+  --gold-500: #D9AE4D;
+  --gold-400: #E7C36F;
+  --gold-200: #F5E3B3;
+  --gold-100: #FCF4DF;
+  --gold-50: #FDFBF5;
+
+  /* Secondary Accent - Soft Blush */
+  --blush-100: #F8E8EC;
+  --blush-50: #FCF4F6;
+
+  /* Neutral Backgrounds - Warm Ivory & Soft Creams */
+  --bg-app: #FFF9F4;      /* Main Warm Ivory Background */
+  --bg-surface: #FFFFFF;  /* Card / Surface Background */
+  --bg-card: #FFFFFF;
+  --bg-warm: #FAF4EE;
+  --bg-subtle: #F6EFE9;
+  --bg-elevated: #FFFFFF;
+
+  /* Text & Typography Colors */
+  --text-primary: #29252A;   /* Dark Charcoal */
+  --text-secondary: #5E5862; /* Refined secondary text */
+  --text-muted: #88828D;     /* Muted metadata */
+  --text-light: #B4AEB8;
+  --text-white: #FFFFFF;
+  --text-burgundy: #7A1635;
+  --text-gold: #C69A3A;
+
+  /* Functional Status Colors */
+  --success: #15803D;
+  --success-bg: #F0FDF4;
+  --success-border: #BBF7D0;
+  --warning: #D97706;
+  --warning-bg: #FFFBEB;
+  --warning-border: #FDE68A;
+  --danger: #DC2626;
+  --danger-bg: #FEF2F2;
+  --danger-border: #FECACA;
+  --info: #0284C7;
+  --info-bg: #F0F9FF;
+  --info-border: #BAE6FD;
+
+  /* Borders & Dividers */
+  --border-light: #EFE7E0;
+  --border-medium: #E2D7CE;
+  --border-strong: #C8BCB0;
+  --border-gold: rgba(198, 154, 58, 0.35);
+  --border-primary: rgba(122, 22, 53, 0.15);
+
+  /* Soft Ambient Shadows (No harsh dark shadows) */
+  --shadow-xs: 0 1px 2px rgba(41, 37, 42, 0.04);
+  --shadow-sm: 0 2px 8px -2px rgba(41, 37, 42, 0.05), 0 1px 3px rgba(41, 37, 42, 0.03);
+  --shadow-md: 0 6px 20px -4px rgba(41, 37, 42, 0.07), 0 2px 6px -1px rgba(41, 37, 42, 0.04);
+  --shadow-lg: 0 14px 32px -6px rgba(41, 37, 42, 0.09), 0 4px 12px -2px rgba(41, 37, 42, 0.04);
+  --shadow-xl: 0 20px 44px -8px rgba(41, 37, 42, 0.12), 0 8px 18px -4px rgba(41, 37, 42, 0.05);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  /* Fluid Responsive Typography */
+  --fluid-h1: clamp(1.75rem, 4vw + 0.5rem, 2.75rem);
+  --fluid-h2: clamp(1.35rem, 3vw + 0.3rem, 2.15rem);
+  --fluid-h3: clamp(1.125rem, 2vw + 0.2rem, 1.5rem);
+  --fluid-body: clamp(0.875rem, 1vw + 0.1rem, 1rem);
+
+  /* Transitions */
+  --transition-fast: 160ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 360ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout Containers */
+  --container-max: 1280px;
+  --container-wide: 1280px;
+  --container-narrow: 880px;
+  --page-pad: clamp(16px, 3.5vw, 32px);
+
+  /* Section Spacing Tokens */
+  --section-pad: clamp(2.5rem, 5vw, 4.5rem);
+  --section-pad-desktop: 5rem;      /* 80px */
+  --section-pad-tablet: 4rem;       /* 64px */
+  --section-pad-mobile: 2.75rem;    /* 44px */
+  --section-pad-compact: 2rem;      /* 32px */
+
+  /* Z-Indices */
+  --z-header: 1000;
+  --z-dropdown: 1100;
+  --z-sticky: 1200;
+  --z-modal-backdrop: 9000;
+  --z-modal: 9100;
+  --z-toast: 1000000;
+}

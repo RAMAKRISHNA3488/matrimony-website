@@ -1,0 +1,487 @@
+/* ==========================================================================
+   TELUGUBANDHAM LUXURY INTERESTS & CONNECTION REQUESTS STYLING
+   ========================================================================== */
+
+.tb-interests-page {
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  min-height: 80vh;
+}
+
+/* Page Header */
+.tb-interests-header {
+  margin-bottom: 2rem;
+}
+
+.tb-interests-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tb-interests-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--primary-950, #2C0711);
+  font-family: var(--font-heading, 'Playfair Display', serif);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tb-interests-subtitle {
+  color: var(--text-secondary, #6B6368);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Stats Overview Strip */
+.tb-interests-stats-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tb-interests-stat-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-md, 12px);
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--border-light, #EDE8E9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+.tb-interests-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(144, 27, 44, 0.08);
+  border-color: rgba(144, 27, 44, 0.2);
+}
+
+.tb-interests-stat-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tb-interests-stat-icon-wrap.received {
+  background: rgba(144, 27, 44, 0.08);
+  color: var(--primary-700, #901B2C);
+}
+
+.tb-interests-stat-icon-wrap.sent {
+  background: rgba(201, 154, 58, 0.12);
+  color: var(--gold-700, #9C721D);
+}
+
+.tb-interests-stat-icon-wrap.accepted {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16A34A;
+}
+
+.tb-interests-stat-icon-wrap.shortlist {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7C3AED;
+}
+
+.tb-interests-stat-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary, #29252A);
+  line-height: 1.2;
+}
+
+.tb-interests-stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary, #6B6368);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Tabs Bar */
+.tb-interests-nav-tabs {
+  display: flex;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--border-light, #EDE8E9);
+  margin-bottom: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.tb-interests-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.35rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-secondary, #6B6368);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tb-interests-tab-btn:hover {
+  color: var(--primary-800, #731320);
+}
+
+.tb-interests-tab-btn.active {
+  color: var(--primary-800, #731320);
+  border-bottom-color: var(--primary-800, #731320);
+}
+
+.tb-interests-badge-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.55rem;
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: inherit;
+}
+
+.tb-interests-tab-btn.active .tb-interests-badge-count {
+  background: rgba(144, 27, 44, 0.12);
+  color: var(--primary-800, #731320);
+}
+
+/* Filter & Search Toolbar */
+.tb-interests-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tb-interests-search-box {
+  position: relative;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.tb-interests-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted, #9E9498);
+  pointer-events: none;
+}
+
+.tb-interests-search-input {
+  width: 100%;
+  padding: 0.6rem 2.2rem 0.6rem 2.4rem;
+  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border-medium, #E0D9DB);
+  background: #FFFFFF;
+  font-size: 0.875rem;
+  color: var(--text-primary, #29252A);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.tb-interests-search-input:focus {
+  border-color: var(--primary-700, #901B2C);
+  box-shadow: 0 0 0 3px rgba(144, 27, 44, 0.08);
+}
+
+.tb-interests-clear-search {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted, #9E9498);
+  cursor: pointer;
+  padding: 2px;
+}
+
+.tb-interests-filter-chips {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tb-interests-chip {
+  padding: 0.45rem 0.95rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border-medium, #E0D9DB);
+  background: #FFFFFF;
+  color: var(--text-secondary, #6B6368);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.tb-interests-chip:hover {
+  border-color: var(--primary-700, #901B2C);
+  color: var(--primary-700, #901B2C);
+}
+
+.tb-interests-chip.active {
+  background: var(--primary-800, #731320);
+  color: #FFFFFF;
+  border-color: var(--primary-800, #731320);
+}
+
+/* Interest Card - List View */
+.tb-interest-list-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg, 14px);
+  border: 1px solid var(--border-light, #EDE8E9);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.tb-interest-list-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(144, 27, 44, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.tb-interest-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold-400, #E0B858);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.tb-interest-details {
+  flex: 1;
+  min-width: 240px;
+}
+
+.tb-interest-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.tb-interest-name-link {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--primary-950, #2C0711);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.tb-interest-name-link:hover {
+  color: var(--primary-700, #901B2C);
+  text-decoration: underline;
+}
+
+.tb-interest-meta-line {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6B6368);
+  margin-top: 0.25rem;
+}
+
+.tb-interest-message-box {
+  font-size: 0.835rem;
+  color: var(--text-muted, #7E7479);
+  background: rgba(144, 27, 44, 0.03);
+  border-left: 3px solid var(--primary-700, #901B2C);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0 6px 6px 0;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.tb-interest-date {
+  font-size: 0.75rem;
+  color: var(--text-muted, #9E9498);
+  margin-top: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tb-interest-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Interest Card - Grid View */
+.tb-interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tb-interest-grid-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg, 14px);
+  border: 1px solid var(--border-light, #EDE8E9);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.tb-interest-grid-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(144, 27, 44, 0.3);
+  box-shadow: 0 8px 24px rgba(144, 27, 44, 0.09);
+}
+
+.tb-interest-grid-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: var(--bg-alt, #FDFBFB);
+}
+
+.tb-interest-grid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tb-interest-grid-card:hover .tb-interest-grid-img {
+  transform: scale(1.03);
+}
+
+.tb-interest-grid-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.tb-interest-grid-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary-950, #2C0711);
+  text-decoration: none;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.tb-interest-grid-name:hover {
+  color: var(--primary-700, #901B2C);
+}
+
+.tb-interest-grid-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light, #EDE8E9);
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE MOBILE STYLES
+   ========================================================================== */
+@media (max-width: 768px) {
+  .tb-interests-page {
+    padding-top: 1.25rem;
+    padding-bottom: 4rem;
+  }
+
+  .tb-interests-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .tb-interests-title {
+    font-size: 1.45rem;
+  }
+
+  .tb-interests-stats-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tb-interests-tabs-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 6px;
+    margin-bottom: 1.25rem;
+  }
+
+  .tb-interests-tabs-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tb-interests-tab-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.8125rem;
+  }
+
+  .tb-interest-list-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .tb-interest-details {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .tb-interest-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .tb-interest-actions .btn {
+    flex: 1 1 120px;
+    justify-content: center;
+    min-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tb-interests-stats-strip {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .tb-interest-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .tb-interest-list-card {
+    padding: 0.85rem;
+  }
+
+  .tb-interest-grid-img-wrap {
+    height: 190px;
+  }
+}

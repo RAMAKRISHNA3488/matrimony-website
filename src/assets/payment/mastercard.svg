@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 22" width="36" height="22" preserveAspectRatio="xMidYMid meet">
+  <!-- Official Mastercard Two Overlapping Circles Symbol -->
+  <circle cx="11" cy="11" r="10.5" fill="#EB001B"/>
+  <circle cx="25" cy="11" r="10.5" fill="#F79E1B"/>
+  <path fill="#FF5F00" d="M18 3.55a10.5 10.5 0 0 0 0 14.9 10.5 10.5 0 0 0 0-14.9z"/>
+</svg>
